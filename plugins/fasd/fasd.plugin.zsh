@@ -5,6 +5,7 @@ if [ $commands[fasd] ]; then # check if fasd is installed
   fi
   source "$fasd_cache"
   unset fasd_cache
+  alias zz='fasd_cd -i'
   alias v='f -e vim'
   alias o='a -e open'
   alias j='zz'
